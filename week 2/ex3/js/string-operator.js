@@ -6,7 +6,8 @@ var firstName = 'Molly';
 var welcomeMessage = greeting + firstName + '!';
 
 //get element with ID of 'greeting' and store in a var
-var el = document.getElementById('greeting'); el.textContent = welcomeMessage;
+var el = document.getElementById('greeting');
+el.textContent = welcomeMessage;
 
 //replace text content with message
 el.textContent = welcomeMessage;
