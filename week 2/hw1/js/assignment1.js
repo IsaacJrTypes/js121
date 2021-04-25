@@ -1,5 +1,5 @@
 //create two var to store value in each
-var firstNum = 1, secondNum = 2;
+var firstNum = 5, secondNum = 7;
 
 //create var that stores sum of two variables
 var totalSum = firstNum + secondNum;
