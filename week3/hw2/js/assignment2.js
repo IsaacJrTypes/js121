@@ -1,7 +1,7 @@
 //prompt a message and store user input in a variable
 var userInputName = prompt('Let\'s play the sum game.\nPlease enter your name');
-var userInputNum1 = prompt('Please enter first number');
-var userInputNum2 = prompt('Now enter second number');
+var userInputNum1 = prompt('Enter first number');
+var userInputNum2 = prompt('Enter second number');
 
 //create var to store sum of two parseInt variables 
 var totalSum = parseInt(userInputNum1) + parseInt(userInputNum2);
