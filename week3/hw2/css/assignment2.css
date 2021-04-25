@@ -1,0 +1,49 @@
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+}
+/* End of Reset */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #634B66;
+    background-image: linear-gradient(180deg, #360e20, #9590A8);
+    background-repeat: no-repeat;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    border: 5px solid #18020C;
+    border-radius: 15px;
+    background-color: #9590A8;
+}
+
+#response {
+    padding: 2em;
+    font-size: 2em;
+    color: #18020C;
+
+}
+
+p a {
+    font-size: 2em;
+    padding: .4em;
+    background-color: #beb9d1;
+    border: 3px solid #18020C;
+    border-radius: 5px;
+}
