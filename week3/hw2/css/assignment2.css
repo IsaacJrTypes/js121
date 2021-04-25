@@ -42,6 +42,7 @@ body {
 
 p a {
     font-size: 2em;
+    text-decoration: none;
     padding: .4em;
     background-color: #beb9d1;
     border: 3px solid #18020C;
