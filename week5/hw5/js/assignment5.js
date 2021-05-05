@@ -1,14 +1,20 @@
 //prompt a message and store user input in a variable
-var userInputNum = prompt('Enter test score \nOr enter 999 to end entries');
+//need too use an alert to display average score
 
-var parsedInput = parseInt(userInputNum)
 
-function sumloop() {
-                                       
-}
+//need var to store: average, number of input scores, score total
+var inputTotal = -999;
+var inputCount = -1;
+var average;
+var entry;
 
-if(parseInt === 999){
-    return
-} else {
+do{
+    entry = parseInt(prompt('Enter test score \nOr enter 999 to end entries'));
+    inputTotal += entry;
+    inputCount++;
+    var average = inputTotal / inputCount;
+    console.log(inputTotal + "," + inputCount)
+}while(entry != 999);
 
-}
+
+alert("Average number is " + average);
