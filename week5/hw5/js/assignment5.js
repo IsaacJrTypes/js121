@@ -11,7 +11,7 @@ do {
   inputTotal += entry;
   //incrase input counter by 1
   inputCount++;
-  //reset input total by -999 and input counter by -1
+  //reset input total by -999 and input counter by -1 and find average
   var average = (inputTotal - 999) / (inputCount - 1);
   //print to console for testing
   console.log(inputTotal + "," + inputCount);
