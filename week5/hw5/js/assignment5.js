@@ -15,7 +15,7 @@ do {
   var average = (inputTotal - 999) / (inputCount - 1);
   //print to console for testing
   console.log(inputTotal + "," + inputCount);
-  //loop,if entry is not 999 then run the previous code block
+  //Do-While loop: if entry is not 999 then run the previous code block
 } while (entry != 999);
 //need to use an alert to display average score
 alert("Average score is " + average);
