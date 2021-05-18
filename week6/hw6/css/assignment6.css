@@ -1,0 +1,72 @@
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 1;
+}
+/* End of Reset */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: green;
+}
+
+#card {
+    width: 30%;
+    background: rgb(105, 70, 129);   
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: .5em;
+    border: 1px solid royalblue;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    border: 1px solid royalblue;
+}
+
+ul {
+    margin: 5% 7%;
+    border: 1px solid goldenrod;
+    line-height: 1.5;
+}
+
+li {
+    border: 2px solid black;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+.winner {
+    background-color: salmon;
+}
+
+.placeholder {
+    background-color: sienna;
+}
+
+.top3 {
+    background-color: steelblue;
+}
+
+#report {
+    background: wheat;
+    text-align: center;
+    padding: 1em;
+    font-style: italic;
+}
