@@ -19,54 +19,60 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: green;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScLxrhoYB8U1rXZXCKMDc5lttRIOME5IubHw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card {
     width: 30%;
-    background: rgb(105, 70, 129);   
+    background: #283618;  
+    color: #FEFAE0; 
 }
 
 h1 {
     font-size: 2em;
     text-align: center;
     margin: .5em;
-    border: 1px solid royalblue;
 }
 
 h2 {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 5px;
-    border: 1px solid royalblue;
 }
 
 ul {
     margin: 5% 7%;
-    border: 1px solid goldenrod;
     line-height: 1.5;
+    list-style-type: none;
+    
 }
 
 li {
-    border: 2px solid black;
+    border: 1px solid black;
     color: whitesmoke;
     line-height: 1.5;
+    background-color: #DDA15E;
+    padding-left: 10px;
 }
 
 .winner {
-    background-color: salmon;
+    background-color: #606C38;
 }
 
 .placeholder {
-    background-color: sienna;
+    background-color: #BC6C25;;
 }
 
 .top3 {
-    background-color: steelblue;
+    background-color: #DDA15E;
 }
 
-#report {
-    background: wheat;
+#report p {
+    background: #606C38;
     text-align: center;
     padding: 1em;
     font-style: italic;
+    height: 3.5em;
 }

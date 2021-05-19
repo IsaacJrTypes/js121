@@ -1,10 +1,13 @@
 /* Declare horses to var */
+
 var mrHorse = "Mr.Horse",
   boJack = "Bojack",
   lilSabastian = "Little Sebastian",
   quickDraw = "Quick Draw McGraw",
   epona = "Epona";
+
 /*Change announcement  */
+
 //Get element by ID to change announcements in a var
 var announcement = document.getElementById("announcement");
 
@@ -18,8 +21,9 @@ updateAnnouncement = getAnnouncement.replace("Place Your Bets!", "Results");
 announcement.firstChild.nodeValue = updateAnnouncement;
 
 /* Change Winner attribute */
+
 //place first place in var
-var firstPlace = document.getElementsByTagName("li").item(0);
+var firstPlace = document.getElementsByTagName("li")[0];
 
 //Change class name to .winner
 firstPlace.setAttribute("class", "winner");
@@ -28,7 +32,7 @@ firstPlace.setAttribute("class", "winner");
 //Create var to store nodelist with placeholder
 var runnerups = document.querySelectorAll("li.placeholder");
 
-//If nodelist contain items
+//If nodelist contain items, change class
 if (runnerups.length > 0) {
   //use for loop to add 2nd and third attributes
   for (var i = 0; i < runnerups.length - 2; i++) {
@@ -38,6 +42,7 @@ if (runnerups.length > 0) {
 }
 
 /* Remove element */
+
 //store removed participant for removal in var
 var removeHorseElement = document.getElementsByTagName("li").item(3);
 
@@ -47,7 +52,8 @@ var listContainer = removeHorseElement.parentNode;
 //Remove element with removeChild
 listContainer.removeChild(removeHorseElement);
 
-/* Add new report element */
+/* Add new report element with new class */
+
 //Create new element and store in var
 var newElement = document.createElement("p");
 
@@ -66,7 +72,8 @@ var placeNewElement = document.getElementById("report");
 placeNewElement.appendChild(newElement);
 
 /* Update list with placement results */
-//Set firstPlace (line 16) with message
+
+//Set firstPlace (line 26) with message
 firstPlace.innerHTML = "<em>Winner</em>: " + lilSabastian;
 
 //Set 2nd place var
