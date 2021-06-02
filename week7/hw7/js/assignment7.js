@@ -12,6 +12,7 @@ function mpgCalculator(event) {
 
   //Calculate mpg
   var mpgCalculated = milesDrivenInput / gasUsedInput;
+  
   //Conditional statement that prompts alert if NaN
   if (isNaN(mpgCalculated)) {
     alert("Both entries must be numeric");
