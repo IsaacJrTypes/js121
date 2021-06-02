@@ -15,14 +15,14 @@ function mpgCalculator(event) {
   //Conditional statement that prompts alert if NaN
   if (isNaN(mpgCalculated)) {
     alert("Both entries must be numeric");
-    //Reset page if alert prompts
+    //Reset form if entry isNaN
     if (true) {
       form.reset();
     }
   } else {
     //Select output DOM node
     var mpgOutput = document.getElementById("mpgCalculated");
-    //change output DOM node value to rounded mpgCalculated value
+    //change output DOM node value to mpgCalculated value and round
     mpgOutput.value = mpgCalculated.toFixed(1);
   }
 }
