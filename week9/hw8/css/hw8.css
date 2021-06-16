@@ -1,0 +1,58 @@
+html {
+    width: 100%;
+    background-color: blue;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    background-color: #a2a2a2;
+    min-height: 100vh;
+}
+ 
+header {
+    width:100%;
+    min-height: 200px;
+    background-color: crimson;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.barStats {
+    display: flex;
+    justify-content: space-between;
+}
+.accordion {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(133, 105, 105);
+    padding: 10px 0;
+    margin-bottom: 1em;
+}
+
+#accordion {
+    width:100%;
+    text-align: left;
+    margin: auto;
+}
+
+p {
+    font-size: 1em;
+}
+
+p.para1,p.para2,p.para3,p.para4 {
+    display: none;
+}
+
+input:read-only {
+    background-color: green;
+    font-weight:bold;
+    border:0;
+    width: 1em;
+  }
