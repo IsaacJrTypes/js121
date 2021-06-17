@@ -12,27 +12,34 @@
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Document</title>
+    <title>Homework 8</title>
   </head>
   <body>
     <header>
-       <!--Season progress bar -->
-      <h1>Rocket League FanSite</h1>
-      <h2><a href="https://www.youtube.com/watch?v=P8eTMmw85Ug" title="Link to RocketPass Season 3 Trailer">Current Season Progress</a></h2>
+      <!--Season progress bar -->
+      <div class="container"><h1>Rocket League Fan Site</h1></div>
+    </header>
+    <section>
+      <h2>
+        <a
+          href="https://www.youtube.com/watch?v=P8eTMmw85Ug"
+          title="Link to RocketPass Season 3 Trailer"
+          >Current Season Progress</a
+        >
+      </h2>
       <div id="progressbar">Season 3</div>
       <div class="barStats">
         <div>Start: April 7</div>
         <div>End: August 11th</div>
       </div>
-    </header>
-
+    </section>
     <!-- Car showcase -->
     <section>
       <div class="accordion">
         <h2>Top 3 Most Played Cars</h2>
         <div id="accordion">
           <h3>Octane</h3>
-          <div>
+          <div class="accordion-content">
             <p>
               Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
               Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
@@ -40,18 +47,20 @@
               mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a
               velit eu ante scelerisque vulputate.
             </p>
+            <img src="img/octanelow.png" />
           </div>
           <h3>Dominus</h3>
-          <div>
+          <div class="accordion-content">
             <p>
               Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit
               amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris
               turpis porttitor velit, faucibus interdum tellus libero ac justo.
               Vivamus non quam. In suscipit faucibus urna.
             </p>
+            <img src="img/dom.jpg" />
           </div>
           <h3>Fennec</h3>
-          <div>
+          <div class="accordion-content">
             <p>
               Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
               lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
@@ -59,6 +68,7 @@
               Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu
               iaculis leo purus venenatis dui.
             </p>
+            <img src="img/fennic.png" />
           </div>
         </div>
       </div>
@@ -66,22 +76,67 @@
 
     <!--Stage selection-->
     <section>
-      <h2>Popular Stages</h2>
+      <h2>Popular Arenas</h2>
       <div id="tabs">
         <ul>
-          <li><a href="#tabs-1">Nunc tincidunt</a></li>
-          <li><a href="#tabs-2">Proin dolor</a></li>
-          <li><a href="#tabs-3">Aenean lacinia</a></li>
+          <li><a href="#tabs-1">DFH Stadium</a></li>
+          <li><a href="#tabs-2">AquaDome</a></li>
+          <li><a href="#tabs-3">NeoTokyo</a></li>
+          <li><a href="#tabs-4">Forbidden Temple</a></li>
         </ul>
         <div id="tabs-1">
-          <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          <p>
+            Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus.
+            Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam
+            elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
+            Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+            Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.
+            Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
+            molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+            dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique
+            tempus lectus.
+          </p>
+          <img src="img/theStadium.jpg" />
         </div>
         <div id="tabs-2">
-          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+          <p>
+            Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida
+            ante, ut pharetra massa metus id nunc. Duis scelerisque molestie
+            turpis. Sed fringilla, massa eget luctus malesuada, metus eros
+            molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet
+            fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
+            Praesent in eros vestibulum mi adipiscing adipiscing. Morbi
+            facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut
+            posuere viverra nulla. Aliquam erat volutpat. Pellentesque
+            convallis. Maecenas feugiat, tellus pellentesque pretium posuere,
+            felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris
+            consectetur tortor et purus.
+          </p>
+          <img src="img/aqua.jpg" />
         </div>
         <div id="tabs-3">
-          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+          <p>
+            Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti.
+            Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat,
+            eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
+            pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+            Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+          </p>
+          <img src="img/neotokyo.jpg" />
+        </div>
+        <div id="tabs-4">
+          <p>
+            Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti.
+            Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat,
+            eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Fusce sodales. Quisque eu urna vel enim commodo
+            pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+            Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+          </p>
+          <img src="img/forbidden.jpg" />
         </div>
       </div>
     </section>
@@ -89,14 +144,58 @@
     <!--Game type section-->
     <section>
       <h3>Special Game Modes</h3>
-      <button id="btn1" class="ui-button ui-corner-all ui-widget" title="Click for more information">Dropshot</button>
-      <button id="btn2" class="ui-button ui-corner-all ui-widget" title="Click for more information">Rumble</button>
-      <button id="btn3" class="ui-button ui-corner-all ui-widget" title="Click for more information">Hoops</button>
-      <button id="btn4" class="ui-button ui-corner-all ui-widget" title="Click for more information">Snow Day</button>
-      <p class="para1"><b>Dropshot</b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ex ratione provident modi, iure corporis distinctio voluptatem inventore fugit exercitationem quia est nobis beatae ea nostrum? Cum commodi ad iste.</p>
-      <p class="para2"><b>Rumble</b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ex ratione provident modi, iure corporis distinctio voluptatem inventore fugit exercitationem quia est nobis beatae ea nostrum? Cum commodi ad iste.</p>
-      <p class="para3"><b>Hoops</b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ex ratione provident modi, iure corporis distinctio voluptatem inventore fugit exercitationem quia est nobis beatae ea nostrum? Cum commodi ad iste.</p>
-      <p class="para4"><b>Snowday</b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ex ratione provident modi, iure corporis distinctio voluptatem inventore fugit exercitationem quia est nobis beatae ea nostrum? Cum commodi ad iste.</p>
+      <button
+        id="btn1"
+        class="ui-button ui-corner-all ui-widget"
+        title="Click for more information"
+      >
+        Dropshot
+      </button>
+      <button
+        id="btn2"
+        class="ui-button ui-corner-all ui-widget"
+        title="Click for more information"
+      >
+        Rumble
+      </button>
+      <button
+        id="btn3"
+        class="ui-button ui-corner-all ui-widget"
+        title="Click for more information"
+      >
+        Hoops
+      </button>
+      <button
+        id="btn4"
+        class="ui-button ui-corner-all ui-widget"
+        title="Click for more information"
+      >
+        Snow Day
+      </button>
+      <p class="para1">
+        <b>Dropshot</b><br />Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Odit ex ratione provident modi, iure corporis distinctio
+        voluptatem inventore fugit exercitationem quia est nobis beatae ea
+        nostrum? Cum commodi ad iste.
+      </p>
+      <p class="para2">
+        <b>Rumble</b><br />Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Odit ex ratione provident modi, iure corporis distinctio
+        voluptatem inventore fugit exercitationem quia est nobis beatae ea
+        nostrum? Cum commodi ad iste.
+      </p>
+      <p class="para3">
+        <b>Hoops</b><br />Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Odit ex ratione provident modi, iure corporis distinctio
+        voluptatem inventore fugit exercitationem quia est nobis beatae ea
+        nostrum? Cum commodi ad iste.
+      </p>
+      <p class="para4">
+        <b>Snowday</b><br />Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Odit ex ratione provident modi, iure corporis distinctio
+        voluptatem inventore fugit exercitationem quia est nobis beatae ea
+        nostrum? Cum commodi ad iste.
+      </p>
     </section>
 
     <!--Vote section-->
@@ -106,12 +205,12 @@
         <div class="controlgroup">
           <select id="bodyType">
             <option>Favorite Body Type</option>
-            <option>Octane </option>
+            <option>Octane</option>
             <option>Dominus</option>
             <option>Plank</option>
-            <option>Breakout </option>
-            <option>Hybrid </option>
-            <option>Merc </option>
+            <option>Breakout</option>
+            <option>Hybrid</option>
+            <option>Merc</option>
           </select>
           <select id="map">
             <option>Favorite Map</option>
@@ -129,14 +228,14 @@
             <option>Dropshot</option>
             <option>Rumble</option>
             <option>Hoops</option>
-            <option>Snow Day</option>
-          </select><br>
+            <option>Snow Day</option></select
+          ><br />
           <label for="gameMode3v3">3v3</label>
-          <input type="radio" name="gameModes" id="gameMode3v3" value="3v3">
+          <input type="radio" name="gameModes" id="gameMode3v3" value="3v3" />
           <label for="gameMode2v2">2v2</label>
-          <input type="radio" name="gameModes" id="gameMode2v2" value="2v2">
+          <input type="radio" name="gameModes" id="gameMode2v2" value="2v2" />
           <label for="gameMode1v1">1v1</label>
-          <input type="radio" name="gameModes" id="gameMode1v1" value="1v1">
+          <input type="radio" name="gameModes" id="gameMode1v1" value="1v1" />
           <button id="vote">Vote Now!</button>
         </div>
       </fieldset>
@@ -144,17 +243,21 @@
     </section>
     <!-- Donation slide -->
     <section>
-     
-        <label for="amount">Donation amount ($5 increments):</label>
-        <input type="text" id="amount" >
-     
-       
+      <label for="amount" id="donation">Donation amount ($5 increments):</label>
+      <input type="text" id="amount" />
+
       <div id="slider"></div>
-      <p>Donations helps us pay the server bills</p>
-      <button name="amount" class="ui-button ui-corner-all ui-widget" title="Click to Donate" id="sliderBtn">Donate Now!</button>
+      <p id="donationComment">Donations helps us keep the server running</p>
+      <button
+        name="amount"
+        class="ui-button ui-corner-all ui-widget"
+        title="Click to Donate"
+        id="sliderBtn"
+      >
+        Donate Now!
+      </button>
 
       <div id="dialog2" title="Thank you!!"></div>
-    
     </section>
 
     <script src="js/hw8.js"></script>

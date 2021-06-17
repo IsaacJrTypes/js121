@@ -53,12 +53,16 @@ $(function () {
   });
 
   $("#vote").on("click", function () {
+    //get value and store in var
     var bodyType = $("#bodyType").val();
     var map = $("#map").val();
     var gameMode = $("#gameMode").val();
     var gameModes = $('input[name="gameModes"]:checked').val();
+    //store message in var
     var voteInfo = `You voted for ${bodyType}, ${map}, ${gameMode} and ${gameModes} `;
+    //execute dialog
     $("#dialog1").dialog("open");
+    //write message by getElementbyId
     document.getElementById("dialog1").innerHTML = voteInfo;
   });
 });
@@ -91,9 +95,12 @@ $(function () {
   });
 
   $("#sliderBtn").on("click", function () {
+    //get slider value and store in var
     var value = $("#slider").slider("value");
     var donationInfo = "You donated $" + value;
+    //execute dialog
     $("#dialog2").dialog("open");
+    //write message by getElementbyId
     document.getElementById("dialog2").innerHTML = donationInfo;
   });
 });
